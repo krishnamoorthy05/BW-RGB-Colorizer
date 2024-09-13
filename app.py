@@ -1,3 +1,4 @@
+
 # Import the necessary packages
 import numpy as np
 import cv2
@@ -11,9 +12,12 @@ def colorizer(img):
     img_rgb = cv2.cvtColor(img_gray, cv2.COLOR_GRAY2RGB)
 
     # Load the pre-trained model and cluster center points from disk
-    prototxt = "C:/Users/krishna/projects/Colorizer/models/models_colorization_deploy_v2.prototxt"
-    model = "C:/Users/krishna/projects/Colorizer/models/colorization_release_v2.caffemodel"
-    points = "C:/Users/krishna/projects/Colorizer/models/pts_in_hull.npy"
+    prototxt =r"/Users/krishna/Desktop/Colorizer/models_colorization_deploy_v2.prototxt"
+    model = r"/Users/krishna/Desktop/Colorizer/colorization_release_v2-2.caffemodel"
+    points = r"/Users/krishna/Desktop/Colorizer/pts_in_hull.npy"
+    #prototxt = "/content/models_colorization_deploy_v2.prototxt"
+    #model = "/content/colorization_release_v2.caffemodel"
+    #points ="/content/pts_in_hull.npy"
     
     # Load the model and points using OpenCV's DNN module
     net = cv2.dnn.readNetFromCaffe(prototxt, model)
