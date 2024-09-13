@@ -15,10 +15,7 @@ def colorizer(img):
     prototxt =r"/Users/krishna/Desktop/Colorizer/models_colorization_deploy_v2.prototxt"
     model = r"/Users/krishna/Desktop/Colorizer/colorization_release_v2-2.caffemodel"
     points = r"/Users/krishna/Desktop/Colorizer/pts_in_hull.npy"
-    #prototxt = "/content/models_colorization_deploy_v2.prototxt"
-    #model = "/content/colorization_release_v2.caffemodel"
-    #points ="/content/pts_in_hull.npy"
-    
+   
     # Load the model and points using OpenCV's DNN module
     net = cv2.dnn.readNetFromCaffe(prototxt, model)
     pts = np.load(points)
