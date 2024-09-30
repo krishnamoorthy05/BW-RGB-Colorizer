@@ -53,7 +53,6 @@ def colorizer(img):
     return colorized
 
 ##########################################################################################################
-
 # Streamlit user interface
 st.write("# Colorize Your Black and White Image")
 st.write("This app allows you to colorize your B&W images.")
