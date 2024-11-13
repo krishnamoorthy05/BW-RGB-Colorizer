@@ -77,3 +77,4 @@ else:
     st.image(colorized_img, use_column_width=True)
 
     print("Done!")  # Output confirmation in the console (optional for debugging)
+
